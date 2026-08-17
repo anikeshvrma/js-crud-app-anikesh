@@ -1,0 +1,70 @@
+{
+  "users": [
+    {
+      "fullname": "Anikesh",
+      "email": "anikesh@gmail.com",
+      "password": "1234567",
+      "id": 5
+    },
+    {
+      "fullname": "Abhijit",
+      "email": "abhijit@gmail.com",
+      "password": "1234587",
+      "id": 4
+    },
+    {
+      "fullname": "Yashmit",
+      "email": "yashmit@gmail.com",
+      "password": "12345676474",
+      "id": 7
+    },
+    {
+      "fullname": "Nitish",
+      "email": "nkumar@gmail.com",
+      "password": "123456797",
+      "id": 9
+    },
+    {
+      "fullname": "Shivam",
+      "email": "shivam@gmail.com",
+      "password": "12345678754",
+      "id": 8
+    },
+    {
+      "fullname": "Anikesh Verma",
+      "email": "anikesh@gmail.com",
+      "password": "635443733",
+      "id": 10
+    },
+    {
+      "fullname": "Anikesh ",
+      "email": "anikesh@gmail.com",
+      "password": "87654321",
+      "id": 11
+    },
+    {
+      "fullname": "Test user",
+      "email": "testuser@gmail.com",
+      "password": "12345678",
+      "id": 13
+    },
+    {
+      "fullname": "Anikesh",
+      "email": "chintu@gmail.com",
+      "password": "55554444",
+      "id": 14
+    },
+    {
+      "fullname": "Anikesh",
+      "email": "verma@gmail.com",
+      "password": "6543457865",
+      "id": 15
+    },
+    {
+      "fullname": "Anikesh Verma",
+      "email": "anikeshverma890@gmail.com",
+      "password": "anikesh@16",
+      "id": 16
+    }
+  ]
+}

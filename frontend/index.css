@@ -1,0 +1,250 @@
+/*========= Common Body ==========*/
+body {
+    margin:0;
+    padding:0;
+    font-family: Arial, sans-serif;
+    background-color: #fffaf5;
+    color: #333;
+}
+
+
+/*========= Navbar ==========*/
+
+nav{
+    background: linear-gradient(90deg, #ff8c00, #ff6a00);
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 60px;
+    box-sizing: border-box;
+}
+
+nav h2 {
+    color: white;
+    margin: 0;
+    font-size: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #fff3e0;
+}
+
+
+/*========= Main Container ==========*/
+main {
+    width: 92%;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+h1 {
+    text-align: center;
+    color: #2d2d2d;
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+
+/*========= Users Container ==========*/
+#users-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+
+/*========= User Card ==========*/
+.user-card {
+    background-color: white;
+
+    padding: 22px;
+
+    border-radius: 16px;
+
+    box-shadow: 0 4px 15px rgba(255, 140, 0,0.12);
+
+    border: 1px solid #fdba74;
+
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+}
+
+.user-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow: 0 8px 25px rgba(255, 140, 0, 0.15);
+}
+
+
+/*========= User Name ==========*/
+.user-card h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+
+    color: #ff6a00;
+
+    font-size: 21px;
+}
+
+
+/* ====== User Details ===== */
+.user-card p{
+    margin: 6px 0;
+
+    color:#555;
+
+    font-size: 14px;
+}
+
+.userCard strong {
+     color: #222;
+}
+
+.userCard strong {
+    color:#222;
+}
+
+/*===== Buttons ===== */
+.user-card button {
+    border:none;
+
+    padding:8px 14px;
+
+    border-radius: 8px;
+
+    cursor : pointer;
+
+    font-size: 14px;
+
+    margin-right: 8px;
+
+    transition: 0.2s;
+}
+
+
+/* Edit Button */
+.user-card button:first-of-type {
+    background-color:#ff8c00;
+    color:white;
+}
+
+.user-card-button:first-of-type:hover {
+    background-color: #e67300;
+}
+
+/* Delete Button */
+.user-card-button:last-of-type {
+    background-color: #dc2626;
+    color:white;
+}
+
+.user-card-button:last-of-type:hover {
+    background-color: #991b1b;
+}
+
+/*======== Create User Form ====== */
+form {
+    background-color: white;
+
+    width: 400px;
+
+    margin:40px auto;
+
+    padding:30px;
+
+    border-radius: 12px;
+
+    box-shadow:- 0 4px 20px rgba(0, 0, 0, 0.12);
+}
+
+form label {
+    display:block;
+
+    margin-bottom: 6px;
+
+    font-weight: bold;
+}
+
+form input {
+     width: 100%;
+
+    padding:10px;
+
+    margin-bottom:18px;
+
+    box-sizing:border-box;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 6px;
+
+    font-size: 15px;
+}
+
+form input:focus {
+  outline:none;
+
+  border-color:#ff8c00;
+
+  box-shadow: 0 0 5px rgba(255, 140, 0, 0.25);
+}
+
+form button {
+    width: 100%;
+
+    padding: 11px;
+
+    border:none;
+
+    border-radius: 6px;
+
+    background-color:#ff8c00;
+
+    color: white;
+
+    font-size:16px;
+
+    cursor:pointer;
+}
+
+form button:hover {
+    background-color:#d97706;
+}
+
+
+/*====== Mobile Responsive ========*/
+@media (max-width: 900px) {
+    #users-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    nav {
+        padding:0 20px;
+    }
+
+    nav a {
+        margin-left: 10px;
+        font-size: 13px;
+    }
+
+    #users-container {
+        grid-template-columns: 1fr;
+    }
+
+    form {
+        width: 90%;
+        box-sizing: border-box;
+    }
+}
