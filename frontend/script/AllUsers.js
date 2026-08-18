@@ -8,7 +8,7 @@ async function getAllUsers() {
 
     try {
 
-        let resp = await fetch("http://localhost:5000/users");
+        let resp = await fetch("https://js-crud-app-anikesh.onrender.com/users");
 
         let data = await resp.json();
 
@@ -72,7 +72,7 @@ async function editUser(id) {
 
         //Exixting user ka data lao
         const response = await fetch(
-            `http://localhost:5000/users/${id}`
+            `https://js-crud-app-anikesh.onrender.com/users/${id}`
         );
 
         const user = await response.json();
@@ -111,7 +111,7 @@ if (newFullname === null) {
 
         //PUT REQUEST
         const updatedResponse = await fetch(
-            `http://localhost:5000/users/${id}`,
+            `https://js-crud-app-anikesh.onrender.com/users/${id}`,
             {
                 method: "PUT",
                 headers: {
@@ -153,7 +153,7 @@ if (newFullname === null) {
 async function deleteUser(id) {
 
     await fetch(
-        `http://localhost:5000/users/${id}`,
+    `https://js-crud-app-anikesh.onrender.com/users/${id}`,
         {
             method: "DELETE"
         }
